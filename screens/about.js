@@ -1,9 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import {globalestyle} from '../styles/global';
+
 
 export default function about(){
     return (
-        <View style={styles.container}>
+        <View style={globalestyle.container}>
         <Text>About</Text>
         <StatusBar style="auto" />
         </View>
@@ -11,7 +13,5 @@ export default function about(){
 }
 
 const styles = StyleSheet.create({
-    container: {
-        padding: 24,
-    },
+
 });
