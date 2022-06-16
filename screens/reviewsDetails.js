@@ -9,9 +9,9 @@ export default function reviewsDetails({navigation}){
     }
     return (
         <View style={globalestyle.container}>
-        <Text>{navigation.getParam('title')}</Text>
-        <Text>{navigation.getParam('body')}</Text>
-        <Text>{navigation.getParam('rating')}</Text>
+        <Text style={globalestyle.TitleText}>{navigation.getParam('title')}</Text>
+        <Text style={globalestyle.TitleText}>{navigation.getParam('body')}</Text>
+        <Text style={globalestyle.TitleText}>{navigation.getParam('rating')}</Text>
         </View>
     );
 }
