@@ -1,13 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, StatusBar,Button } from 'react-native';
 import {globalestyle} from '../styles/global';
 
 
-export default function reviewsDetails(){
+export default function reviewsDetails({navigation}){
+    const BackHandler = () =>{
+        navigation.goBack();
+    }
     return (
         <View style={globalestyle.container}>
-        <Text>review</Text>
-        <StatusBar style="auto" />
+        <Text>{navigation.getParam('title')}</Text>
+        <Text>{navigation.getParam('body')}</Text>
+        <Text>{navigation.getParam('rating')}</Text>
         </View>
     );
 }
